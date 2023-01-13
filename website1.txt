@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hastyana Portofolio</title>
+
+</head>
+
+<body style="font-family: 'Source Sans Pro', sans-serif">
+
+    <!-- Header -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    Hastyana Rihardneswara
+                </h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    I am website developer and work as IT Support
+                </p>
+                <a href="#portofolio" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900">
+                    Get started
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>  
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="assets/image/pc.png" alt="Hastyana Rihardneswara">
+            </div>                
+        </div>
+    </section>
+
+    <!-- Portofolio Section -->
+    <section id="portofolio" class="container mx-auto px-6 p-10">
+
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+            Portofolio
+        </h2>
+
+        <div class="flex items-center flex-wrap mb-20">
+            <!-- content 1 -->
+            <div class="w-full md:w-1/2 px-2 mb-4">
+                <div class="bg-gray-200 rounded shadow py-2">
+                    <img class="p-5" src="assets/image/pondok/admin.png" alt="">
+                    <p class="text-black-800 text-xl px-6 mb-5 text-center">
+                        Educational information system website base at Pondok Pesantren Manafiul Ulum
+                    </p>
+                    <p class="text-gray-500 text-lg md:text-sm px-6">
+                        An information system for saving students data.
+                    </p>
+                </div>
+            </div>
+
+            <!-- content 2 -->
+            <div class="w-full md:w-1/2 px-2 mb-4">
+                <div class="bg-gray-200 rounded shadow py-2">
+                    <img class="p-5" src="assets/image/bening/home.png" alt="">
+                    <p class="text-black-800 text-xl px-6 mb-5 text-center">
+                        Administration system website base at Benings Clinic Surabaya
+                    </p>
+                    <p class="text-gray-500 text-lg md:text-sm px-6">
+                        An information system for saving customer data and payment history.
+                    </p>
+                </div>
+            </div>
+
+            <!-- content 3 -->
+            <div class="w-full md:w-1/2 px-2 mb-4">
+                <div class="bg-gray-200 rounded shadow py-2">
+                    <img class="p-5" src="assets/image/bening/bcs.png" alt="">
+                    <p class="text-black-800 text-xl px-6 mb-5 text-center">
+                        Benings Clinic Surabaya Official Website
+                    </p>
+                    <p class="text-gray-500 text-lg px-6">
+                        A website for sales and product education.
+                    </p>
+                    <a class="text-gray-500 text-xs md:text-sm px-6 hover:text-gray-800 text-right" href="https://beningsclinicsurabaya.com/" target="_blank">
+                        beningsclinicsurabaya.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- content 4 -->
+            <div class="w-full md:w-1/2 px-2 mb-4">
+                <div class="bg-gray-200 rounded shadow py-2">
+                    <img class="p-5" src="assets/image/angger/ad.png" alt="">
+                    <p class="text-black-800 text-xl px-6 mb-5 text-center">
+                        Angger Dimas Official Website
+                    </p>
+                    <p class="text-gray-500 text-lg px-6">
+                        DJ Angger Dimas official website
+                    </p>
+                    <a class="text-gray-500 text-xs md:text-sm px-6 hover:text-gray-800 text-right" href="https://anggerdimas.tv/" target="_blank">
+                        anggerdimas.tv
+                    </a>
+                </div>
+            </div>
+            
+    </section>
+
+    <!-- Experience Section -->
+    <section class="bg-gray-100">
+        <div class="container mx-auto px-6 py-20">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+                Work Experiences
+            </h2>
+            <div class="flex flex-wrap">
+                <!-- content 1 -->
+                <div class="w-full md:w-1/2 px-2 mb-4">
+                    <div class="bg-white rounded shadow py-2">
+                        <p class="text-gray-800 text-base px-6 mb-5">
+                            IT Support Staff at Benings Clinic Surabaya (PT Benings Pratama Group) <br>
+                            2021 - 2022
+                        </p>
+                        <p class="text-gray-500 text-xs md:text-sm px-6">
+                            <b>Jobdesk</b> <br>
+                            Develope administration system, <br>
+                            Develope marketing website, <br>
+                            Maintenance operational computer, <br>
+                            Database administrator.
+                        </p>
+                    </div>
+                </div>                            
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section style="background-color: #ffffff">
+        <div class="container mx-auto px-6 text-center py-10">
+            <h2 class="mb-6 text-4xl font-bold text-center text-gray-900">
+                Skill
+            </h2>
+            <div class="flex flex-wrap items-center justify-center mb-20">
+                <div class="max-w-xs h-auto md:w-1/5">
+                    <img src="assets/image/java-script.png" alt="">
+                </div>
+                <div class="max-w-xs h-auto md:w-1/5">
+                    <img src="assets/image/php-logo.png" alt="">
+                </div>
+                <div class="max-w-xs h-auto md:w-1/5">
+                    <img src="assets/image/css.png" alt="">
+                </div>
+                <div class="max-w-xs h-auto md:w-1/5">
+                    <img src="assets/image/sql-server.png" alt="">
+                </div>
+                <div class="max-w-xs h-auto md:w-1/5">
+                    <img src="assets/image/tailwind-css.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer (Contact) -->
+    <footer class="bg-gray-100">
+        <div class="container mx-auto px-6 pt-10 pb-6">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h5 class="uppercase mb-6 font-bold">Media Social</h5>
+                    <ul class="mb-4">
+                        <li class="mt-2">
+                            <a href="https://www.linkedin.com/hastyana/" class="hover:underline text-gray-600 hover:text-orange-500" target="_blank">
+                                Linkedin
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://www.facebook.com/hastyana.rihardneswara/" class="hover:underline text-gray-600 hover:text-orange-500" target="_blank">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://www.instagram.com/hastyana_hr/" class="hover:underline text-gray-600 hover:text-orange-500" target="_blank">
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h5 class="uppercase mb-6 font-bold">Contact</h5>
+                    <ul class="mb-4">
+                        <li class="mt-2">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hastyana.hr@gmail.com" class="hover:underline text-gray-600 hover:text-orange-500" target="_blank">
+                                Email
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://api.whatsapp.com/send?phone=6282313023469" class="hover:underline text-gray-600 hover:text-orange-500" target="_blank">
+                                Whatsapp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
