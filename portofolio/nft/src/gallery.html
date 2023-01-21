@@ -19,12 +19,26 @@
 <body class="bg-gray-900">
 
     <!-- Nav -->
-    <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-5 md:px-20 lg:px-20 text-lg text-white bg-transparent md:mt-5 lg:mt-5 mt-0 fixed z-10 top-0">
-       <div class="flex">
+    <nav id="navbar" class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-5 md:px-20 lg:px-20 text-lg text-white bg-transparent mt-0 fixed z-10 top-0">
+        <div class="flex">
             <a class="flex items-center text-white no-underline hover:no-underline" href="#header">
                 <img src="../assets/image/logo/logo-web.png" alt="logo" class="h-10 mr-3 sm:h-10">
             </a>
-            <div class="pt-2 relative mx-auto self-center">
+            <ul class="hidden pt-4 text-base md:flex text-gray-700 md:justify-between md:pt-0">
+                <li>
+                    <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="explore.html">Explore</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="activity.html">Activity</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="#header">Gallery</a>
+                </li>
+            </ul>
+            <div class="md:hidden pt-2 relative mx-auto self-center">
                 <input class="bg-black opacity-50 h-10 px-5 pr-16 rounded-full text-sm focus:outline-none text-white" type="search" name="search" placeholder="Search">
                 <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
                     <svg class="text-white h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
@@ -37,9 +51,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
-       
         <div class="hidden w-full md:flex md:items-center md:w-auto bg-midnight lg:bg-transparent md:bg-transparent p-2" id="menu">
-            <ul class=" pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
+            <ul class="md:hidden pt-4 text-base text-gray-700 md:justify-between md:pt-0">
                 <li>
                     <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="index.html">Home</a>
                 </li>
@@ -58,12 +71,30 @@
                     </a>
                 </li>
             </ul>
+            <ul class="hidden md:flex pt-4 text-base text-gray-700 md:justify-between md:pt-0">
+                <li>
+                    <div class="pt-2 relative mx-auto self-center">
+                        <input class="bg-black opacity-50 h-10 px-5 pr-16 rounded-full text-sm focus:outline-none text-white" type="search" name="search" placeholder="Search">
+                        <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+                            <svg class="text-white h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                                <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <a class="md:p-3 py-2 block text-white no-underline hover:text-underline" href="wallet.html">
+                        <button class="rounded-full group bg-red-500 transition-colors duration-300 transform p-1 hover:blur-lg hover:opacity-60">Connect Wallet</button>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Header -->
     <header id="header" class="overflow-hidden md:h-96 lg:h-96 h-auto">
-        <img alt="home" src="../assets/image/background/blur.jpg" class="lg:absolute md:absolute w-full md:h-96 lg:h-96 h-auto bg-center bg-no-repeat object-cover"/>
+        <img alt="home" src="../assets/image/background/blur-dark.jpg" class="lg:absolute md:absolute w-full md:h-96 lg:h-96 h-auto bg-center bg-no-repeat object-cover"/>
         <!-- Call To Action (CTA) -->
         <div class="lg:px-8 lg:py-40">
             <div class="absolute container flex flex-col max-h-screen px-6 md:-mt-72 lg:-mt-72 -mt-24 mb-7 text-center justify-center items-center sm:h-full">
@@ -370,11 +401,27 @@
 
 </body>
 
+<!-- Scroll bg-color -->
+<script type="text/javascript">
+    var navbar= document.getElementById('navbar');
+    window.onscroll = function () { 
+        if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+            navbar.classList.add("bg-midnight-50");
+            navbar.classList.remove("bg-transparent");
+        } 
+        else {
+            navbar.classList.add("bg-transparent");
+            navbar.classList.remove("bg-midnight-50");
+        }
+    };
+</script>
+<!-- toggle menu -->
 <script type="text/javascript">
     const button = document.querySelector('#menu-button');
     const menu = document.querySelector('#menu');
     button.addEventListener('click', () => {
     menu.classList.toggle('hidden');
+    menu.classList.toggle('bg-midnight-50');
     });
 </script>
 <script>
