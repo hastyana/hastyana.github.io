@@ -14,126 +14,146 @@
 
 <body style="font-family: 'Source Sans Pro', sans-serif">
 
-    <!-- Header -->
-    <header id="top-page">
-        <!-- Navbar -->
-        <nav class="bg-transparent px-2 sm:px-4 py-3">
-            <div class="container flex flex-wrap items-center justify-between mx-auto">
-                <a href="#" class="flex items-center">
-                    <img src="assets/image/logo/logo-web.png" alt="logo" class="h-14 mr-3 sm:h-14">
-                    <span>
-                        <p class="self-center text-blue-800 text-lg font-semibold whitespace-nowrap">Hastyana</p>
-                        <p class="self-center text-blue-500 text-xs font-normal whitespace-nowrap">Rihardneswara</p>
-                    </span>
-                </a>
-                <button data-collapse-toggle="navbar" type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden duration-200 hover:bg-gray-200 focus:outline-none focus:ring-2" 
-                aria-controls="navbar" aria-expanded="false">
-                    <span class="sr-only">Main Menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" 
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" 
-                        clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar">
-                    <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 
-                    md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
-                        <li><a class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-black md:p-0 text-black 
-                            transition-colors duration-300 transform hover:text-blue-500 text-base font-semibold" href="index.html">Home</a></li>
-                        <li><a class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-black md:p-0 text-black 
-                            transition-colors duration-300 transform hover:text-blue-500 text-base font-semibold" href="#top-page">Works</a></li>
-                        <li><a class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-black md:p-0 text-black 
-                            transition-colors duration-300 transform hover:text-blue-500 text-base font-semibold" href="about.html">About</a></li>
-                        <li><a class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-black md:p-0 text-black 
-                            transition-colors duration-300 transform hover:text-blue-500 text-base font-semibold" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- Nav -->
+    <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-5 md:px-20 lg:px-20 text-lg text-white bg-white md:bg-transparent md:mt-5 lg:mt-5 mt-0 md:static fixed z-10 top-0">
+        <div class="flex">
+             <a class="flex items-center text-white no-underline hover:no-underline" href="#header">
+                 <img src="assets/image/logo/logo-web.png" alt="logo" class="h-10 mr-3 sm:h-10">
+                 <span>
+                     <p class="self-center text-blue-800 text-lg font-semibold whitespace-nowrap">Hastyana</p>
+                     <p class="self-center text-blue-500 text-xs font-normal whitespace-nowrap">Rihardneswara</p>
+                 </span>
+             </a>
+         </div>
+         <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block text-blue-600 md:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+         </svg>
+         <div class="hidden w-full md:flex md:items-center md:w-auto bg-midnight lg:bg-transparent md:bg-transparent p-2" id="menu">
+             <ul class=" pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
+                 <li>
+                     <a class="md:p-4 py-2 block font-semibold text-blue-600 no-underline transition-colors duration-300 transform hover:text-blue-300 hover:text-underline" href="index.html">Home</a>
+                 </li>
+                 <li>
+                     <a class="md:p-4 py-2 block font-semibold text-blue-600 no-underline transition-colors duration-300 transform hover:text-blue-300 hover:text-underline" href="#project">Works</a>
+                 </li>
+                 <li>
+                     <a class="md:p-4 py-2 block font-semibold text-blue-600 no-underline transition-colors duration-300 transform hover:text-blue-300 hover:text-underline" href="about.html">About</a>
+                 </li>
+                 <li>
+                     <a class="md:p-4 py-2 block font-semibold text-blue-600 no-underline transition-colors duration-300 transform hover:text-blue-300 hover:text-underline" href="contact.html">Contact</a>
+                 </li>
+             </ul>
+         </div>
+    </nav>
 
     <!-- Project -->
-    <section class="container px-5 py-2 mx-auto lg:pt-20 lg:px-10">
+    <header id="project" class="container px-5 py-2 mx-auto lg:pt-10 lg:px-10 overflow-hidden md:mt-0 mt-24">
         <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">
             My Project So Far
         </h2>
-        <div class="flex items-center flex-wrap">
+        <div class="flex justify-center items-center flex-wrap">
             <!-- content 1 -->
-            <div class="w-full h-56 md:w-1/3 px-2 mb-4">
+            <div class="w-full h-full md:w-1/2 lg:w-1/3 px-2 mb-4">
                 <button data-modal-target="project1" data-modal-toggle="project1" type="button" onclick="toggleModal('project1')">
-                    <div class="bg-blue-600 rounded shadow py-2 transform transition duration-300 hover:scale-110">
-                        <img class="p-3 block object-cover object-center w-full h-48 rounded-lg" src="assets/image/pondok/admin.png" alt="sistem_administrasi_sekolah">
+                    <div class="flex relative">
+                        <img class="absolute inset-0 object-center w-full h-full" src="assets/image/pondok/admin.png" alt="sistem_administrasi_sekolah">
+                        <div class="px-auto py-20 relative z-10 h-auto md:w-96 w-80 border-gray-200 bg-black opacity-0 hover:opacity-50">
+                            <h1 class="text-xl font-bold text-white m-2 text-center uppercase">More Info</h1>
+                        </div>
                     </div>
                 </button>
             </div>
             <!-- content 2 -->
-            <div class="w-full h-56 md:w-1/3 px-2 mb-4">
+            <div class="w-full h-full md:w-1/2 lg:w-1/3 px-2 mb-4">
                 <button data-modal-target="project2" data-modal-toggle="project2" type="button" onclick="toggleModal('project2')">
-                    <div class="bg-blue-600 rounded shadow py-2 transform transition duration-300 hover:scale-110">
-                        <img class="p-3 block object-cover object-center w-full h-48 rounded-lg" src="assets/image/bening/home.png" alt="sistem_administrasi_benings">
+                    <div class="flex relative">
+                        <img class="absolute inset-0 object-center w-full h-full" src="assets/image/bening/home.png" alt="sistem_administrasi_benings">
+                        <div class="px-auto py-20 relative z-10 h-auto md:w-96 w-80 border-gray-200 bg-black opacity-0 hover:opacity-50">
+                            <h1 class="text-xl font-bold text-white m-2 text-center uppercase">More Info</h1>
+                        </div>
                     </div>
                 </button>
             </div>
             <!-- content 3 -->
-            <div class="w-full h-56 md:w-1/3 px-2 mb-4">
+            <div class="w-full h-full md:w-1/2 lg:w-1/3 px-2 mb-4">
                 <button data-modal-target="project3" data-modal-toggle="project3" type="button" onclick="toggleModal('project3')">
-                    <div class="bg-blue-600 rounded shadow py-2 transform transition duration-300 hover:scale-110">
-                        <img class="p-3 block object-cover object-center w-full h-48 rounded-lg" src="assets/image/bening/bcs.png" alt="website_benings">
+                    <div class="flex relative">
+                        <img class="absolute inset-0 object-center w-full h-full" src="assets/image/bening/bcs.png" alt="website_benings">
+                        <div class="px-auto py-20 relative z-10 h-auto md:w-96 w-80 border-gray-200 bg-black opacity-0 hover:opacity-50">
+                            <h1 class="text-xl font-bold text-white m-2 text-center uppercase">More Info</h1>
+                        </div>
                     </div>
                 </button>
             </div>
             <!-- content 4 -->
-            <div class="w-full h-56 md:w-1/3 px-2 mb-4 ">
+            <div class="w-full h-full md:w-1/2 lg:w-1/3 px-2 mb-4">
                 <button data-modal-target="project4" data-modal-toggle="project4" type="button" onclick="toggleModal('project4')">
-                    <div class="bg-blue-600 rounded shadow py-2 transform transition duration-300 hover:scale-110">
-                        <img class="p-3 block object-cover object-center w-full h-48 rounded-lg" src="assets/image/angger/ad.png" alt="website_anggerdimas">    
+                    <div class="flex relative">
+                        <img class="absolute inset-0 object-center w-full h-full" src="assets/image/angger/ad.png" alt="website_anggerdimas">
+                        <div class="px-auto py-20 relative z-10 h-auto md:w-96 w-80 border-gray-200 bg-black opacity-0 hover:opacity-50">
+                            <h1 class="text-xl font-bold text-white m-2 text-center uppercase">More Info</h1>
+                        </div>
                     </div>
                 </button>
             </div>
             <!-- content 5 -->
-            <div class="w-full h-56 md:w-1/3 px-2 mb-4">
+            <div class="w-full h-full md:w-1/2 lg:w-1/3 px-2 mb-4">
                 <button data-modal-target="project5" data-modal-toggle="project5" type="button" onclick="toggleModal('project5')">
-                    <div class="bg-blue-600 rounded shadow py-2 transform transition duration-300 hover:scale-110">
-                        <img class="p-3 block object-cover object-center w-full h-48 rounded-lg " src="assets/image/sns/sns.JPG" alt="website_snstourindo">
+                    <div class="flex relative">
+                        <img class="absolute inset-0 object-center w-full h-full" src="assets/image/sns/sns.JPG" alt="website_snstourindo">
+                        <div class="px-auto py-20 relative z-10 h-auto md:w-96 w-80 border-gray-200 bg-black opacity-0 hover:opacity-50">
+                            <h1 class="text-xl font-bold text-white m-2 text-center uppercase">More Info</h1>
+                        </div>
                     </div>
                 </button>
             </div>
         </div>
-    </section>
+    </header>
 
     <!-- portofolio -->
-    <!-- <section class="overflow-hidden text-black mb-20">
-        <div class="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+    <section class="overflow-hidden text-black mb-20">
+        <div class="container px-5 py-2 mx-auto lg:pt-10 lg:px-10">
             <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">
                 My Portofolio
             </h2>
             <div class="flex flex-wrap -m-1 md:-m-2">
                 <div class="flex flex-wrap w-full lg:w-1/2">
                     <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110 lg:w-1/2">
-                        <a href=""><img src="assets/image/angger/ad.png" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg"></a>                        
+                        <button data-modal-target="porto1" data-modal-toggle="porto1" type="button" onclick="toggleModal('porto1')">
+                            <img src="assets/image/landing/bussiness.JPG" alt="bussiness" class="block object-cover object-center w-full h-full rounded-lg">
+                        </button>                        
                     </div>
                     <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110 lg:w-1/2">
-                        <a href=""><img src="assets/image/angger/ad.png" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg"></a>                        
+                        <button data-modal-target="porto2" data-modal-toggle="porto2" type="button" onclick="toggleModal('porto2')">
+                            <img src="assets/image/landing/food.JPG" alt="food" class="block object-cover object-center w-full h-full rounded-lg">
+                        </button>                        
                     </div>
                     <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110">
-                        <a href=""><img src="assets/image/angger/ad.png" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg"></a>
+                        <button data-modal-target="porto3" data-modal-toggle="porto3" type="button" onclick="toggleModal('porto3')">
+                            <img src="assets/image/landing/kidszone.JPG" alt="kidszone" class="block object-cover object-center w-full h-full rounded-lg">
+                        </button>
                     </div>
                 </div>
                 <div class="flex flex-wrap w-full lg:w-1/2">
                     <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110">
-                        <a href=""><img src="assets/image/angger/ad.png" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg"></a>
+                        <button data-modal-target="porto4" data-modal-toggle="porto4" type="button" onclick="toggleModal('porto4')">
+                            <img src="assets/image/comprof/nft.JPG" alt="nft" class="block object-cover object-center w-full h-full rounded-lg">
+                        </button>
                     </div>
                     <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110 lg:w-1/2">
-                        <a href=""><img src="assets/image/angger/ad.png" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg"></a>                        
+                        <button data-modal-target="porto5" data-modal-toggle="porto5" type="button" onclick="toggleModal('porto5')">
+                            <img src="assets/image/landing/oraganzation.JPG" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg">
+                        </button>                        
                     </div>
-                    <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110 lg:w-1/2">
-                        <a href=""><img src="assets/image/angger/ad.png" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg"></a>                        
-                    </div>
+                    <!-- <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110 lg:w-1/2">
+                        <button data-modal-target="porto6" data-modal-toggle="porto6" type="button" onclick="toggleModal('porto6')">
+                            <img src="assets/image/angger/ad.png" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg">
+                        </button>                        
+                    </div> -->
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Footer -->
     <footer class="bg-black" >
@@ -141,7 +161,7 @@
             <div class="sm:flex sm:items-center sm:justify-between">
                 <div class="flex justify-center text-gray-100 sm:justify-start">
                     <a href="#top-page" class="flex items-center">
-                        <img src="" alt="logo" class="h-6 mr-3 sm:h-9">
+                        <img src="assets/image/logo/logo-web.png" alt="logo" class="h-10 mr-3 sm:h-10">
                         <span>
                             <p class="self-center text-lg font-semibold whitespace-nowrap">Hastyana</p>
                             <p class="self-center text-xs font-normal whitespace-nowrap">Rihardneswara</p>
@@ -178,10 +198,6 @@
                         This system has features for inventory management, student data management, school activity management and student payment management
                     </p>
                 </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="project1" type="button" onclick="toggleModal('project1')" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
-                </div>
             </div>
         </div>
     </div>
@@ -206,10 +222,6 @@
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                         This system has features for customer data management, and payment management
                     </p>
-                </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="project2" type="button" onclick="toggleModal('project2')" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
                 </div>
             </div>
         </div>
@@ -237,10 +249,6 @@
                     </p>
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">Link Website <a target="_blank" href="https://beningsclinicsurabaya.com/" class="transition hover:text-blue-600">beningsclinicsurabaya.com</a></p>                    
                 </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="project3" type="button" onclick="toggleModal('project3')" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
-                </div>
             </div>
         </div>
     </div>
@@ -263,10 +271,6 @@
                 <div class="p-6 space-y-6">
                     <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/angger/ad.png" alt="website_anggerdimas"> 
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">Link Website <a target="_blank" href="https://anggerdimas.tv/" class="transition hover:text-blue-600">anggerdimas.tv</a></p>
-                </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="project4" type="button" onclick="toggleModal('project4')" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
                 </div>
             </div>
         </div>
@@ -294,9 +298,132 @@
                     </p>
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">Link Website <a target="_blank" href="https://snstourindo.com/" class="transition hover:text-blue-600">snstourindo.com</a></p>
                 </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="project5" type="button" onclick="toggleModal('project5')" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portofolio Modal -->
+    <!-- Portofolio 1 -->
+    <div id="porto1" tabindex="-1" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center">
+        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Bussiness Landing Page
+                    </h3>
+                    <button type="button" onclick="toggleModal('porto1')" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/bussiness.JPG" alt="bussiness_landing_page">
+                    <a target="_blank" href="landing_page/bussiness/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        see the landing page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portofolio 2 -->
+    <div id="porto2" tabindex="-1" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center">
+        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Food Landing Page
+                    </h3>
+                    <button type="button" onclick="toggleModal('porto2')" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/food.JPG" alt="food_landing_page">
+                    <a target="_blank" href="landing_page/food/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        see the landing page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portofolio 3 -->
+    <div id="porto3" tabindex="-1" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center">
+        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Kids Zone Landing Page
+                    </h3>
+                    <button type="button" onclick="toggleModal('porto3')" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/kidszone.JPG" alt="kidszone_landing_page">
+                    <a target="_blank" href="landing_page/kidszone/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        see the landing page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portofolio 4 -->
+    <div id="porto4" tabindex="-1" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center">
+        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Bussiness Landing Page
+                    </h3>
+                    <button type="button" onclick="toggleModal('porto4')" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/comprof/nft.JPG" alt="nft_comprof">
+                    <a target="_blank" href="comprof/nft/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        see the company profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portofolio 5 -->
+    <div id="porto5" tabindex="-1" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center">
+        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Organizational Landing Page
+                    </h3>
+                    <button type="button" onclick="toggleModal('porto5')" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/oraganzation.JPG" alt="organizational_landing_page">
+                    <a target="_blank" href="landing_page/organization/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        see the landing page
+                    </a>
                 </div>
             </div>
         </div>
@@ -336,6 +463,44 @@
         document.getElementById(project5).classList.toggle("flex");
         document.getElementById(project5 + "-backdrop").classList.toggle("flex");
     }
+
+    function toggleModal(porto1){
+        document.getElementById(porto1).classList.toggle("hidden");
+        document.getElementById(porto1 + "-backdrop").classList.toggle("hidden");
+        document.getElementById(porto1).classList.toggle("flex");
+        document.getElementById(porto1 + "-backdrop").classList.toggle("flex");
+    }
+    function toggleModal(porto2){
+        document.getElementById(porto2).classList.toggle("hidden");
+        document.getElementById(porto2 + "-backdrop").classList.toggle("hidden");
+        document.getElementById(porto2).classList.toggle("flex");
+        document.getElementById(porto2 + "-backdrop").classList.toggle("flex");
+    }
+    function toggleModal(porto3){
+        document.getElementById(porto3).classList.toggle("hidden");
+        document.getElementById(porto3 + "-backdrop").classList.toggle("hidden");
+        document.getElementById(porto3).classList.toggle("flex");
+        document.getElementById(porto3 + "-backdrop").classList.toggle("flex");
+    }
+    function toggleModal(porto4){
+        document.getElementById(porto4).classList.toggle("hidden");
+        document.getElementById(porto4 + "-backdrop").classList.toggle("hidden");
+        document.getElementById(porto4).classList.toggle("flex");
+        document.getElementById(porto4 + "-backdrop").classList.toggle("flex");
+    }
+    function toggleModal(porto5){
+        document.getElementById(porto5).classList.toggle("hidden");
+        document.getElementById(porto5 + "-backdrop").classList.toggle("hidden");
+        document.getElementById(porto5).classList.toggle("flex");
+        document.getElementById(porto5 + "-backdrop").classList.toggle("flex");
+    }
+</script>
+<script type="text/javascript">
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+    button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    });
 </script>
 
 </html>

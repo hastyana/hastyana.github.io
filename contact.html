@@ -16,48 +16,41 @@
 
 <body style="font-family: 'Source Sans Pro', sans-serif">
 
-    <!-- Header -->
-    <header id="top-page">
-        <!-- Navbar -->
-        <nav class="bg-transparent px-2 sm:px-4 py-3">
-            <div class="container flex flex-wrap items-center justify-between mx-auto">
-                <a href="#" class="flex items-center">
-                    <img src="assets/image/logo/logo-web.png" alt="logo" class="h-14 mr-3 sm:h-14">
-                    <span>
-                        <p class="self-center text-blue-800 text-lg font-semibold whitespace-nowrap">Hastyana</p>
-                        <p class="self-center text-blue-500 text-xs font-normal whitespace-nowrap">Rihardneswara</p>
-                    </span>
-                </a>
-                <button data-collapse-toggle="navbar" type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden duration-200 hover:bg-gray-200 focus:outline-none focus:ring-2" 
-                aria-controls="navbar" aria-expanded="false">
-                    <span class="sr-only">Main Menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" 
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" 
-                        clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar">
-                    <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 
-                    md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
-                        <li><a class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-black md:p-0 text-black 
-                            transition-colors duration-300 transform hover:text-blue-500 text-base font-semibold" href="index.html">Home</a></li>
-                        <li><a class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-black md:p-0 text-black 
-                            transition-colors duration-300 transform hover:text-blue-500 text-base font-semibold" href="work.html">Works</a></li>
-                        <li><a class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-black md:p-0 text-black 
-                            transition-colors duration-300 transform hover:text-blue-500 text-base font-semibold" href="about.html">About</a></li>
-                        <li><a class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-black md:p-0 text-black 
-                            transition-colors duration-300 transform hover:text-blue-500 text-base font-semibold" href="#top-page">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- Nav -->
+    <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-5 md:px-20 lg:px-20 text-lg text-white bg-white md:bg-transparent md:mt-5 lg:mt-5 mt-0 md:static fixed z-10 top-0">
+        <div class="flex">
+             <a class="flex items-center text-white no-underline hover:no-underline" href="#header">
+                 <img src="assets/image/logo/logo-web.png" alt="logo" class="h-10 mr-3 sm:h-10">
+                 <span>
+                     <p class="self-center text-blue-800 text-lg font-semibold whitespace-nowrap">Hastyana</p>
+                     <p class="self-center text-blue-500 text-xs font-normal whitespace-nowrap">Rihardneswara</p>
+                 </span>
+             </a>
+         </div>
+         <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block text-blue-600 md:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+         </svg>
+         <div class="hidden w-full md:flex md:items-center md:w-auto bg-midnight lg:bg-transparent md:bg-transparent p-2" id="menu">
+             <ul class=" pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
+                 <li>
+                     <a class="md:p-4 py-2 block font-semibold text-blue-600 no-underline transition-colors duration-300 transform hover:text-blue-300 hover:text-underline" href="index.html">Home</a>
+                 </li>
+                 <li>
+                     <a class="md:p-4 py-2 block font-semibold text-blue-600 no-underline transition-colors duration-300 transform hover:text-blue-300 hover:text-underline" href="work.html">Works</a>
+                 </li>
+                 <li>
+                     <a class="md:p-4 py-2 block font-semibold text-blue-600 no-underline transition-colors duration-300 transform hover:text-blue-300 hover:text-underline" href="about.html">About</a>
+                 </li>
+                 <li>
+                     <a class="md:p-4 py-2 block font-semibold text-blue-600 no-underline transition-colors duration-300 transform hover:text-blue-300 hover:text-underline" href="#header">Contact</a>
+                 </li>
+             </ul>
+         </div>
+    </nav>
 
-    <!-- Project -->
-    <section>
-        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <!-- contact -->
+    <header>
+        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 md:mt-0 mt-10" id="header">
             <div class="mx-auto max-w-lg text-center mb-5">
                 <h2 class="text-3xl font-bold sm:text-4xl">Get In Touch</h2>
             </div>
@@ -106,7 +99,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </header>
 
     <!-- Footer -->
     <footer class="bg-black" >
@@ -114,10 +107,10 @@
             <div class="sm:flex sm:items-center sm:justify-between">
                 <div class="flex justify-center text-gray-100 sm:justify-start">
                     <a href="#top-page" class="flex items-center">
-                        <img src="assets/image/logo/logo-web.png" alt="logo" class="h-14 mr-3 sm:h-14">
+                        <img src="assets/image/logo/logo-web.png" alt="logo" class="h-10 mr-3 sm:h-10">
                         <span>
-                            <p class="self-center text-blue-500 text-lg font-semibold whitespace-nowrap">Hastyana</p>
-                            <p class="self-center text-blue-300 text-xs font-normal whitespace-nowrap">Rihardneswara</p>
+                            <p class="self-center text-lg font-semibold whitespace-nowrap">Hastyana</p>
+                            <p class="self-center text-xs font-normal whitespace-nowrap">Rihardneswara</p>
                         </span>
                     </a>
                 </div>        
@@ -129,5 +122,13 @@
     </footer>
 
 </body>
+
+<script type="text/javascript">
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+    button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    });
+</script>
 
 </html>
