@@ -19,12 +19,26 @@
 <body class="bg-gray-900">
 
     <!-- Nav -->
-    <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-5 md:px-20 lg:px-20 text-lg text-white bg-transparent md:mt-5 lg:mt-5 mt-0 fixed z-10 top-0">
-       <div class="flex">
+    <nav id="navbar" class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-5 md:px-20 lg:px-20 text-lg text-white bg-transparent mt-0 fixed z-10 top-0">
+        <div class="flex">
             <a class="flex items-center text-white no-underline hover:no-underline" href="#header">
                 <img src="../assets/image/logo/logo-web.png" alt="logo" class="h-10 mr-3 sm:h-10">
             </a>
-            <div class="pt-2 relative mx-auto self-center">
+            <ul class="hidden pt-4 text-base md:flex text-gray-700 md:justify-between md:pt-0">
+                <li>
+                    <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="#header">Home</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="explore.html">Explore</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="activity.html">Activity</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+            <div class="md:hidden pt-2 relative mx-auto self-center">
                 <input class="bg-black opacity-50 h-10 px-5 pr-16 rounded-full text-sm focus:outline-none text-white" type="search" name="search" placeholder="Search">
                 <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
                     <svg class="text-white h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
@@ -37,9 +51,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
-       
         <div class="hidden w-full md:flex md:items-center md:w-auto bg-midnight lg:bg-transparent md:bg-transparent p-2" id="menu">
-            <ul class=" pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
+            <ul class="md:hidden pt-4 text-base text-gray-700 md:justify-between md:pt-0">
                 <li>
                     <a class="md:p-4 py-2 block text-white no-underline transition-colors duration-300 transform hover:text-red-500 hover:text-underline" href="#header">Home</a>
                 </li>
@@ -58,12 +71,30 @@
                     </a>
                 </li>
             </ul>
+            <ul class="hidden md:flex pt-4 text-base text-gray-700 md:justify-between md:pt-0">
+                <li>
+                    <div class="pt-2 relative mx-auto self-center">
+                        <input class="bg-black opacity-50 h-10 px-5 pr-16 rounded-full text-sm focus:outline-none text-white" type="search" name="search" placeholder="Search">
+                        <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+                            <svg class="text-white h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                                <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <a class="md:p-3 py-2 block text-white no-underline hover:text-underline" href="wallet.html">
+                        <button class="rounded-full group bg-red-500 transition-colors duration-300 transform p-1 hover:blur-lg hover:opacity-60">Connect Wallet</button>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Header -->
     <header id="header" class="overflow-hidden md:h-screen lg:h-screen h-auto">
-        <img alt="home" src="../assets/image/background/home.jpg" class="lg:absolute md:absolute w-full h-screen bg-center bg-no-repeat object-cover"/>
+        <img alt="home" src="../assets/image/background/home-dark.jpg" class="lg:absolute md:absolute w-full h-screen bg-center bg-no-repeat object-cover"/>
         <!-- Call To Action (CTA) -->
         <div class="sm:grid sm:grid-cols-2 sm:items-center md:my-12 md:mx-14 lg:my-12 lg:mx-14 -mt-96">
             <div class="relative p-8 md:p-12 lg:px-16 lg:py-24">
@@ -98,26 +129,26 @@
                 <div class="w-full px-2 mb-4 h-full">
                     <div class="flex items-center flex-wrap">
                         <a href="wallet.html" class="md:w-1/4 lg:w-1/4 w-full p-2 md:p-5 lg:p-5 flex flex-col items-center">
-                            <img alt="vegetables" src="../assets/image/icon/wallet.png" class="h-10 w-10 object-cover"/>
-                            <p class="self-center text-white text-center font-bold">Set Up Your Wallet</p>
+                            <img alt="vegetables" src="../assets/image/icon/wallet.png" class="h-36 w-36 object-cover"/>
+                            <p class="self-center text-white text-center font-bold text-2xl">Set Up Your Wallet</p>
                             <p class="self-center text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
                                 tempus tellus etiam sed</p>
                         </a>
                         <a href="activity.html" class="md:w-1/4 lg:w-1/4 w-full p-2 md:p-5 lg:p-5 flex flex-col items-center">
-                            <img alt="vegetables" src="../assets/image/icon/add.png" class="h-10 w-10 object-cover"/>
-                            <p class="self-center text-white text-center font-bold">Create Your Collection</p>
+                            <img alt="vegetables" src="../assets/image/icon/add.png" class="h-36 w-36 object-cover"/>
+                            <p class="self-center text-white text-center font-bold text-2xl">Create Your Collection</p>
                             <p class="self-center text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
                                 tempus tellus etiam sed</p>
                         </a>
                         <a href="explore.html" class="md:w-1/4 lg:w-1/4 w-full p-2 md:p-5 lg:p-5 flex flex-col items-center">
-                            <img alt="vegetables" src="../assets/image/icon/nft.png" class="h-10 w-10 object-cover"/>
-                            <p class="self-center text-white text-center font-bold">Add Your NFT's</p>
+                            <img alt="vegetables" src="../assets/image/icon/nft.png" class="h-36 w-36 object-cover"/>
+                            <p class="self-center text-white text-center font-bold text-2xl">Add Your NFT's</p>
                             <p class="self-center text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
                                 tempus tellus etiam sed</p>
                         </a>
                         <a href="community.html" class="md:w-1/4 lg:w-1/4 w-full p-2 md:p-5 lg:p-5 flex flex-col items-center">
-                            <img alt="vegetables" src="../assets/image/icon/bookmark.png" class="h-10 w-10 object-cover"/>
-                            <p class="self-center text-white text-center font-bold">List Them</p>
+                            <img alt="vegetables" src="../assets/image/icon/bookmark.png" class="h-36 w-36 object-cover"/>
+                            <p class="self-center text-white text-center font-bold text-2xl">List Them</p>
                             <p class="self-center text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
                                 tempus tellus etiam sed</p>
                         </a>
@@ -130,39 +161,43 @@
     <!-- NFT -->
     <section id="explore" class="overflow-hidden">
         <div class="px-2 mb-10 mt-10">
-            <div class="mx-auto flex  justify-start items-center mb-5 px-5">
+            <div class="mx-auto flex justify-start items-center mb-5 px-5">
                 <h2 class="text-lg font-bold text-white md:text-xl">
                     Live Auctions
                 </h2>
             </div>
             <div class="flex flex-wrap -m-1 md:-m-2 swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper ">
                     <a href="#" class="block rounded-lg p-4 bg-midnight shadow-lg swiper-slide">
                         <img alt="nft1" src="../assets/image/nft/7748169.jpg" class="h-56 w-full rounded-md object-cover"/>
                         <div class="mt-2">
                             <dl>
                                 <div>
                                     <dt class="sr-only">Name</dt>
-                                    <dd class="text-lg font-bold text-white">NFT 1</dd>
+                                    <dd class="text-xl font-bold text-white">NFT 1</dd>
                                 </div>
-                                <div>
+                                <div class="text-right -mt-6">
                                     <dt class="sr-only">Price</dt>
                                     <dd class="font-medium text-white">0,80 ETH  &nbsp; <span>1/20</span></dd>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="text-base font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
+                                        tempus tellus etiam sed</p>
                                 </div>
                             </dl>
                             <div class="mt-6 flex items-center gap-8 text-xs">
                                 <div class="inline-flex sm:shrink-0 sm:items-center">
-                                    <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-10 w-10 rounded-md object-cover"/>
+                                    <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-16 w-16 rounded-md object-cover"/>
                                     <div class="mt-1.5 ml-3 sm:mt-0">
-                                        <p class="text-white font-semibold text-lg">Hasty</p>
+                                        <p class="text-white font-semibold text-2xl">Hasty</p>
                                     </div>
-                                    <div class="mt-1.5 ml-44 md:ml-32 lg:ml-32 text-right sm:mt-0">
+                                    <div class="mt-1.5 ml-40 md:ml-28 lg:ml-28 text-right sm:mt-0">
                                         <i class="fi fi-ss-heart text-right text-lg text-purple-500"></i>
                                         <p class="text-white">500 liked</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-2">
+                            <div class="mt-2 text-center">
                                 <p class="text-red-500 font-semibold text-lg">Buy Now</p>
                             </div>
                         </div>
@@ -173,26 +208,30 @@
                             <dl>
                                 <div>
                                     <dt class="sr-only">Name</dt>
-                                    <dd class="text-lg font-bold text-white">NFT 1</dd>
+                                    <dd class="text-xl font-bold text-white">NFT 1</dd>
                                 </div>
-                                <div>
+                                <div class="text-right -mt-6">
                                     <dt class="sr-only">Price</dt>
                                     <dd class="font-medium text-white">0,80 ETH  &nbsp; <span>1/20</span></dd>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="text-base font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
+                                        tempus tellus etiam sed</p>
                                 </div>
                             </dl>
                             <div class="mt-6 flex items-center gap-8 text-xs">
                                 <div class="inline-flex sm:shrink-0 sm:items-center">
-                                    <img alt="nft1" src="../assets/image/nft/7748175.jpg" class="h-10 w-10 rounded-md object-cover"/>
+                                    <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-16 w-16 rounded-md object-cover"/>
                                     <div class="mt-1.5 ml-3 sm:mt-0">
-                                        <p class="text-white font-semibold text-lg">Hasty</p>
+                                        <p class="text-white font-semibold text-2xl">Hasty</p>
                                     </div>
-                                    <div class="mt-1.5 ml-44 md:ml-32 lg:ml-32 text-right sm:mt-0">
+                                    <div class="mt-1.5 ml-40 md:ml-28 lg:ml-28 text-right sm:mt-0">
                                         <i class="fi fi-ss-heart text-right text-lg text-purple-500"></i>
                                         <p class="text-white">500 liked</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-2">
+                            <div class="mt-2 text-center">
                                 <p class="text-red-500 font-semibold text-lg">Buy Now</p>
                             </div>
                         </div>
@@ -203,26 +242,30 @@
                             <dl>
                                 <div>
                                     <dt class="sr-only">Name</dt>
-                                    <dd class="text-lg font-bold text-white">NFT 1</dd>
+                                    <dd class="text-xl font-bold text-white">NFT 1</dd>
                                 </div>
-                                <div>
+                                <div class="text-right -mt-6">
                                     <dt class="sr-only">Price</dt>
                                     <dd class="font-medium text-white">0,80 ETH  &nbsp; <span>1/20</span></dd>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="text-base font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
+                                        tempus tellus etiam sed</p>
                                 </div>
                             </dl>
                             <div class="mt-6 flex items-center gap-8 text-xs">
                                 <div class="inline-flex sm:shrink-0 sm:items-center">
-                                    <img alt="nft1" src="../assets/image/nft/7748169.jpg" class="h-10 w-10 rounded-md object-cover"/>
+                                    <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-16 w-16 rounded-md object-cover"/>
                                     <div class="mt-1.5 ml-3 sm:mt-0">
-                                        <p class="text-white font-semibold text-lg">Hasty</p>
+                                        <p class="text-white font-semibold text-2xl">Hasty</p>
                                     </div>
-                                    <div class="mt-1.5 ml-44 md:ml-32 lg:ml-32 text-right sm:mt-0">
+                                    <div class="mt-1.5 ml-40 md:ml-28 lg:ml-28 text-right sm:mt-0">
                                         <i class="fi fi-ss-heart text-right text-lg text-purple-500"></i>
                                         <p class="text-white">500 liked</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-2">
+                            <div class="mt-2 text-center">
                                 <p class="text-red-500 font-semibold text-lg">Buy Now</p>
                             </div>
                         </div>
@@ -233,26 +276,30 @@
                             <dl>
                                 <div>
                                     <dt class="sr-only">Name</dt>
-                                    <dd class="text-lg font-bold text-white">NFT 1</dd>
+                                    <dd class="text-xl font-bold text-white">NFT 1</dd>
                                 </div>
-                                <div>
+                                <div class="text-right -mt-6">
                                     <dt class="sr-only">Price</dt>
                                     <dd class="font-medium text-white">0,80 ETH  &nbsp; <span>1/20</span></dd>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="text-base font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
+                                        tempus tellus etiam sed</p>
                                 </div>
                             </dl>
                             <div class="mt-6 flex items-center gap-8 text-xs">
                                 <div class="inline-flex sm:shrink-0 sm:items-center">
-                                    <img alt="nft1" src="../assets/image/nft/7748175.jpg" class="h-10 w-10 rounded-md object-cover"/>
+                                    <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-16 w-16 rounded-md object-cover"/>
                                     <div class="mt-1.5 ml-3 sm:mt-0">
-                                        <p class="text-white font-semibold text-lg">Hasty</p>
+                                        <p class="text-white font-semibold text-2xl">Hasty</p>
                                     </div>
-                                    <div class="mt-1.5 ml-44 md:ml-32 lg:ml-32 text-right sm:mt-0">
+                                    <div class="mt-1.5 ml-40 md:ml-28 lg:ml-28 text-right sm:mt-0">
                                         <i class="fi fi-ss-heart text-right text-lg text-purple-500"></i>
                                         <p class="text-white">500 liked</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-2">
+                            <div class="mt-2 text-center">
                                 <p class="text-red-500 font-semibold text-lg">Buy Now</p>
                             </div>
                         </div>
@@ -263,26 +310,30 @@
                             <dl>
                                 <div>
                                     <dt class="sr-only">Name</dt>
-                                    <dd class="text-lg font-bold text-white">NFT 1</dd>
+                                    <dd class="text-xl font-bold text-white">NFT 1</dd>
                                 </div>
-                                <div>
+                                <div class="text-right -mt-6">
                                     <dt class="sr-only">Price</dt>
                                     <dd class="font-medium text-white">0,80 ETH  &nbsp; <span>1/20</span></dd>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="text-base font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
+                                        tempus tellus etiam sed</p>
                                 </div>
                             </dl>
                             <div class="mt-6 flex items-center gap-8 text-xs">
                                 <div class="inline-flex sm:shrink-0 sm:items-center">
-                                    <img alt="nft1" src="../assets/image/nft/7748169.jpg" class="h-10 w-10 rounded-md object-cover"/>
+                                    <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-16 w-16 rounded-md object-cover"/>
                                     <div class="mt-1.5 ml-3 sm:mt-0">
-                                        <p class="text-white font-semibold text-lg">Hasty</p>
+                                        <p class="text-white font-semibold text-2xl">Hasty</p>
                                     </div>
-                                    <div class="mt-1.5 ml-44 md:ml-32 lg:ml-32 text-right sm:mt-0">
+                                    <div class="mt-1.5 ml-40 md:ml-28 lg:ml-28 text-right sm:mt-0">
                                         <i class="fi fi-ss-heart text-right text-lg text-purple-500"></i>
                                         <p class="text-white">500 liked</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-2">
+                            <div class="mt-2 text-center">
                                 <p class="text-red-500 font-semibold text-lg">Buy Now</p>
                             </div>
                         </div>
@@ -300,12 +351,17 @@
     <!-- Top Seller -->
     <section id="seller" class="mb-14">
         <div class="container px-5 py-2 mx-auto mt-5">
+            <div class="mx-auto flex justify-center items-center mb-5 px-5">
+                <h2 class="text-2xl font-bold text-white md:text-4xl">
+                    Top Artist
+                </h2>
+            </div>
             <div class="flex items-center flex-wrap">
                 <div class="w-full px-2 mb-4 h-full">
                     <div class="flex items-center flex-wrap">
                         <div class="w-full md:w-1/4 lg:w-1/4 mt-6 flex flex-col items-center gap-8 text-xs">
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-1 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">01</p>
                                 <img alt="nft1" src="../assets/image/nft/7748169.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Hasty</p>
@@ -313,7 +369,7 @@
                                 </div>
                             </div>
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-2 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">02</p>
                                 <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Richard</p>
@@ -321,7 +377,7 @@
                                 </div>
                             </div>
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-3 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">03</p>
                                 <img alt="nft1" src="../assets/image/nft/7748175.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Ware</p>
@@ -331,7 +387,7 @@
                         </div>
                         <div class="w-full md:w-1/4 lg:w-1/4 mt-6 flex flex-col items-center gap-8 text-xs">
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-4 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">04</p>
                                 <img alt="nft1" src="../assets/image/nft/7748175.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Gerald</p>
@@ -339,7 +395,7 @@
                                 </div>
                             </div>
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-5 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">05</p>
                                 <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Gerard</p>
@@ -347,7 +403,7 @@
                                 </div>
                             </div>
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-6 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">06</p>
                                 <img alt="nft1" src="../assets/image/nft/7748169.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Bruyne</p>
@@ -357,7 +413,7 @@
                         </div>
                         <div class="w-full md:w-1/4 lg:w-1/4 mt-6 flex flex-col items-center gap-8 text-xs">
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-7 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">07</p>
                                 <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Ferna</p>
@@ -365,7 +421,7 @@
                                 </div>
                             </div>
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-8 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">08</p>
                                 <img alt="nft1" src="../assets/image/nft/7748169.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Bruno</p>
@@ -373,7 +429,7 @@
                                 </div>
                             </div>
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-9 text-lg m-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">09</p>
                                 <img alt="nft1" src="../assets/image/nft/7748175.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Fred</p>
@@ -383,7 +439,7 @@
                         </div>
                         <div class="w-full md:w-1/4 lg:w-1/4 mt-6 flex flex-col items-center gap-8 text-xs">
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-1 text-lg text-white"></i><i class="fi fi-sr-circle-0 text-lg mr-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">10</p>
                                 <img alt="nft1" src="../assets/image/nft/7748169.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">De Gea</p>
@@ -391,15 +447,15 @@
                                 </div>
                             </div>
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-1 text-lg text-white"></i><i class="fi fi-sr-circle-1 text-lg mr-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">11</p>
                                 <img alt="nft1" src="../assets/image/nft/7748175.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
-                                    <p class="text-white font-semibold text-xl">Ronaldo</p>
+                                    <p class="text-white font-semibold text-xl">Ronald</p>
                                     <p class="text-white font-normal text-lg">0.5 ETH</p>
                                 </div>
                             </div>
                             <div class="inline-flex sm:shrink-0 sm:items-center">
-                                <i class="fi fi-sr-circle-1 text-lg text-white"></i><i class="fi fi-sr-circle-2 text-lg mr-2 text-white"></i>
+                                <p class="bg-white rounded-full text-3xl m-2 px-1 py-1">12</p>
                                 <img alt="nft1" src="../assets/image/nft/7748166.jpg" class="h-20 w-20 rounded-full object-cover"/>
                                 <div class="mt-1.5 ml-3 sm:mt-0">
                                     <p class="text-white font-semibold text-xl">Messi</p>
@@ -621,17 +677,34 @@
 
 </body>
 
+<!-- Scroll bg-color -->
+<script type="text/javascript">
+    var navbar= document.getElementById('navbar');
+    window.onscroll = function () { 
+        if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+            navbar.classList.add("bg-midnight-50");
+            navbar.classList.remove("bg-transparent");
+        } 
+        else {
+            navbar.classList.add("bg-transparent");
+            navbar.classList.remove("bg-midnight-50");
+        }
+    };
+</script>
+<!-- toggle menu -->
 <script type="text/javascript">
     const button = document.querySelector('#menu-button');
     const menu = document.querySelector('#menu');
     button.addEventListener('click', () => {
     menu.classList.toggle('hidden');
+    menu.classList.toggle('bg-midnight-50');
     });
 </script>
-<script>
+<!-- swiper -->
+<script type="text/javascript">
     new Swiper('.swiper', {
       loop: true,
-      spaceBetween: 32,
+      spaceBetween: 10,
       slidesPerView: 1,
       pagination: {
         clickable: true,
@@ -639,10 +712,10 @@
       },
       breakpoints: {
         640: {
-          slidesPerView: 2,
+          slidesPerView: 2.25,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 4.25,
         },
       },
     })
