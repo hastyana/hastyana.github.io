@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="scroll-smooth hover:scroll-auto md:scroll-auto" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/image/">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Coolthing-Kid's</title>
+</head>
+
+<style>
+    .staat-font {
+        font-family: 'Staatliches', cursive;
+    }
+    .ibm-font {
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+    }
+</style>
+
+<body class="bg-gray-100">
+
+    <!-- Nav -->
+    <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-2 md:px-5 lg:px-5 text-lg text-black bg-gray-100 fixed md:static lg:static mt-0 z-10 top-0"> 
+        <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <div class="hidden w-full md:w-1/3 md:flex md:items-center" id="menu">
+            <ul class=" pt-4 text-base md:flex md:justify-start md:pt-0 md:basis-1/3 ibm-font font-bold capitalize">
+                <li>
+                    <a class="md:p-2 py-2 block text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="md:p-2 py-2 block text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="men.html">Men</a>
+                </li>
+                <li>
+                    <a class="md:p-2 py-2 block text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="women.html">Women</a>
+                </li>
+                <li>
+                    <a class="md:p-2 py-2 block text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="#header">Kids</a>
+                </li>
+                <li>
+                    <a class="md:p-2 py-2 block text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="special.html">Special Item</a>
+                </li>
+                <li>
+                    <a class="md:p-2 py-2 block md:hidden text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="store.html">Store</a>
+                </li>
+                <li>
+                    <a class="md:p-2 py-2 block md:hidden text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a class="md:p-2 py-2 block md:hidden text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="card.html">Card</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex mt-2 md:w-1/3 md:justify-center">
+            <a class="text-black no-underline hover:no-underline" href="#header">
+                <h2 class="text-lg font-bold text-black transition-colors duration-300 transform hover:text-gray-700 md:text-xl italic staat-font">
+                    COOLTH
+                </h2>
+            </a>
+        </div>
+        <div class="hidden w-full md:flex md:w-1/3 md:justify-end md:items-center p-2">
+            <ul class=" pt-4 text-base text-gray-700 md:flex md:justify-end md:basis-1/3 md:pt-0 ibm-font font-bold capitalize">
+                <li>
+                    <a class="md:p-2 py-2 block text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="store.html">Store</a>
+                </li>
+                <li>
+                    <a class="md:p-2 py-2 block text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a class= "md:p-2 py-2 block text-black no-underline transition-colors duration-300 transform hover:text-gray-500 hover:text-underline" href="card.html">Card</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full flex md:w-1/2 justify-center p-2 ibm-font">
+            <div class="relative w-full">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                </div>
+                <input type="text" id="simple-search" class="bg-transparent  text-black text-sm rounded-lgblock w-full pl-10 p-2.5 border-0 border-b-2 border-black" placeholder="Search">
+            </div>
+        </div>
+        <div class="w-full flex md:w-1/2 justify-center md:items-center  p-2 ibm-font">
+            <label for="underline_select" class="sr-only">filter</label>
+            <select id="underline_select" class="cursor-pointer m-2 block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-black appearance-none">
+                <option selected>Select</option>
+                <option value="NA">New Arrival</option>
+                <option value="">Category 1</option>
+                <option value="">Category 1</option>
+                <option value="">Category 1</option>
+                <option value="">Category 1</option>
+                <option value="">Category 1</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="overflow-hidden h-auto">
+        <div class="container mx-auto py-14 md:py-0 px-2 mt-36 md:mt-20">
+            <h2 class="text-2xl font-extrabold text-black lg:text-5xl md:text-5xl text-center staat-font uppercase">
+                New Arrivals - Kid's
+            </h2>
+            <p class="text-lg font-normal text-black mt-6 capitalize staat-font">
+                4 result
+            </p>
+            <hr class="border border-black">
+            <div class="flex flex-wrap mt-2">
+                <div class="ibm-font w-full md:w-1/2 xl:w-1/4">
+                    <a href="#" class="block p-4">
+                        <img alt="product" src="../assets/image/collection/alex-haigh-fEt6Wd4t4j0-unsplash.jpg" class="h-80 w-full object-cover"/>
+                        <div class="mt-2">
+                            <dl>
+                                <div>
+                                    <dt class="sr-only">Name</dt>
+                                    <dd class="text-lg font-bold text-center text-black">Shirt</dd>
+                                </div>
+                                <div>
+                                    <dt class="sr-only">Color</dt>
+                                    <dd class="font-medium text-center text-black">3 color</dd>
+                                </div>
+                            </dl>
+                            <div class="mt-2">
+                                <p class="text-black text-center font-semibold text-lg duration-200 hover:text-gray-700">$100</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ibm-font w-full md:w-1/2 xl:w-1/4">
+                    <a href="#" class="block p-4">
+                        <img alt="product" src="../assets/image/collection/pexels-anj-namoro-2850487.jpg" class="h-80 w-full object-cover"/>
+                        <div class="mt-2">
+                            <dl>
+                                <div>
+                                    <dt class="sr-only">Name</dt>
+                                    <dd class="text-lg font-bold text-center text-black">Shirt</dd>
+                                </div>
+                                <div>
+                                    <dt class="sr-only">Color</dt>
+                                    <dd class="font-medium text-center text-black">3 color</dd>
+                                </div>
+                            </dl>
+                            <div class="mt-2">
+                                <p class="text-black text-center font-semibold text-lg duration-200 hover:text-gray-700">$100</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ibm-font w-full md:w-1/2 xl:w-1/4">
+                    <a href="#" class="block p-4">
+                        <img alt="product" src="../assets/image/collection/pexels-humphrey-muleba-2072453.jpg" class="h-80 w-full object-cover"/>
+                        <div class="mt-2">
+                            <dl>
+                                <div>
+                                    <dt class="sr-only">Name</dt>
+                                    <dd class="text-lg font-bold text-center text-black">Shirt</dd>
+                                </div>
+                                <div>
+                                    <dt class="sr-only">Color</dt>
+                                    <dd class="font-medium text-center text-black">3 color</dd>
+                                </div>
+                            </dl>
+                            <div class="mt-2">
+                                <p class="text-black text-center font-semibold text-lg duration-200 hover:text-gray-700">$100</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ibm-font w-full md:w-1/2 xl:w-1/4">
+                    <a href="#" class="block p-4">
+                        <img alt="product" src="../assets/image/collection/pexels-humphrey-muleba-2072453.jpg" class="h-80 w-full object-cover"/>
+                        <div class="mt-2">
+                            <dl>
+                                <div>
+                                    <dt class="sr-only">Name</dt>
+                                    <dd class="text-lg font-bold text-center text-black">Shirt</dd>
+                                </div>
+                                <div>
+                                    <dt class="sr-only">Color</dt>
+                                    <dd class="font-medium text-center text-black">3 color</dd>
+                                </div>
+                            </dl>
+                            <div class="mt-2">
+                                <p class="text-black text-center font-semibold text-lg duration-200 hover:text-gray-700">$100</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ibm-font w-full md:w-1/2 xl:w-1/4">
+                    <a href="#" class="block p-4">
+                        <img alt="product" src="../assets/image/collection/pexels-josé-luis-photographer-2522681.jpg" class="h-80 w-full object-cover"/>
+                        <div class="mt-2">
+                            <dl>
+                                <div>
+                                    <dt class="sr-only">Name</dt>
+                                    <dd class="text-lg font-bold text-center text-black">Shirt</dd>
+                                </div>
+                                <div>
+                                    <dt class="sr-only">Color</dt>
+                                    <dd class="font-medium text-center text-black">3 color</dd>
+                                </div>
+                            </dl>
+                            <div class="mt-2">
+                                <p class="text-black text-center font-semibold text-lg duration-200 hover:text-gray-700">$100</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ibm-font w-full md:w-1/2 xl:w-1/4">
+                    <a href="#" class="block p-4">
+                        <img alt="product" src="../assets/image/collection/alex-haigh-fEt6Wd4t4j0-unsplash.jpg" class="h-80 w-full object-cover"/>
+                        <div class="mt-2">
+                            <dl>
+                                <div>
+                                    <dt class="sr-only">Name</dt>
+                                    <dd class="text-lg font-bold text-center text-black">Shirt</dd>
+                                </div>
+                                <div>
+                                    <dt class="sr-only">Color</dt>
+                                    <dd class="font-medium text-center text-black">3 color</dd>
+                                </div>
+                            </dl>
+                            <div class="mt-2">
+                                <p class="text-black text-center font-semibold text-lg duration-200 hover:text-gray-700">$100</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>  
+
+    <footer aria-label="Site Footer">
+        <div class="container mx-auto py-14 md:py-0 px-2 -mt-32 md:mt-32">    
+            <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
+                <div class="mx-auto max-w-sm lg:max-w-none">
+                    <a class="flex items-center text-black no-underline hover:no-underline" href="#header">
+                        <h2 class="text-lg font-bold text-black transition-colors duration-300 transform hover:text-gray-700 md:text-xl italic staat-font">
+                            COOLTH
+                        </h2>
+                    </a>
+                    <p class="text-base font-normal ibm-font text-black text-left normal-case">
+                        We work as hard as we can to provide the best for your outfit so that you look attractive and stand out compared to tohers in public spaces
+                    </p>
+                </div>        
+                <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-right">
+                    <div>
+                        <div aria-label="Footer Services Nav" class="flex flex-col space-y-1">
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="#">
+                                Help
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="product.html">
+                                Product
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="size.html">
+                                Size Guide
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="#">
+                                Shopping
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="payment.html">
+                                Payment
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="#">
+                                Return
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="faq.html">
+                                FAQ's
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div aria-label="Footer Services Nav" class="flex flex-col space-y-1">
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="about.html">
+                                About
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="contact.html">
+                                Contact Us
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="store.html">
+                                Store
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="#">
+                                Careers
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="#">
+                                Authenticity
+                            </a>
+                        </div>
+                    </div>        
+                    <div>
+                        <div aria-label="Footer Services Nav" class="flex flex-col space-y-1">
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="https://www.facebook.com/">
+                                Facebook
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="https://www.instagram.com/">
+                                Instagram
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="https://www.youtube.com/">
+                                Youtube
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="https://twitter.com/">
+                                Twitter
+                            </a>
+                            <a class="font-medium text-black transition duration-200 hover:text-gray-500" href="https://gmail.com/">
+                                Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <p class="text-xs leading-relaxed ibm-font text-black">
+                © Company 2022. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+<script type="text/javascript">
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+    button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    });
+</script>
+
+</html>
