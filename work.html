@@ -147,11 +147,11 @@
                             <img src="assets/image/landing/oraganzation.JPG" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg">
                         </button>                        
                     </div>
-                    <!-- <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110 lg:w-1/2">
+                    <div class="w-full p-1 md:p-2 transform transition duration-300 hover:scale-110 lg:w-1/2">
                         <button data-modal-target="porto6" data-modal-toggle="porto6" type="button" onclick="toggleModal('porto6')">
-                            <img src="assets/image/angger/ad.png" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg">
+                            <img src="assets/image/clothing/coolthing.JPG" alt="portofolio" class="block object-cover object-center w-full h-full rounded-lg">
                         </button>                        
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,7 +424,7 @@
                 <div class="p-6 space-y-6">
                     <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/bussiness.JPG" alt="bussiness_landing_page">
                     <a target="_blank" href="portofolio/bussiness/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        see the landing page
+                        klick to see the landing page
                     </a>
                 </div>
             </div>
@@ -449,7 +449,7 @@
                 <div class="p-6 space-y-6">
                     <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/food.JPG" alt="food_landing_page">
                     <a target="_blank" href="portofolio/food/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        see the landing page
+                        klick to see the landing page
                     </a>
                 </div>
             </div>
@@ -474,7 +474,7 @@
                 <div class="p-6 space-y-6">
                     <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/kidszone.JPG" alt="kidszone_landing_page">
                     <a target="_blank" href="portofolio/kidszone/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        see the landing page
+                        klick to see the landing page
                     </a>
                 </div>
             </div>
@@ -499,7 +499,7 @@
                 <div class="p-6 space-y-6">
                     <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/comprof/nft.JPG" alt="nft_comprof">
                     <a target="_blank" href="portofolio/nft/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        see the company profile
+                        klick to see the company profile
                     </a>
                 </div>
             </div>
@@ -524,7 +524,32 @@
                 <div class="p-6 space-y-6">
                     <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/oraganzation.JPG" alt="organizational_landing_page">
                     <a target="_blank" href="portofolio/organization/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        see the landing page
+                        klick to see the landing page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portofolio 6 -->
+    <div id="porto6" tabindex="-1" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center">
+        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Organizational Landing Page
+                    </h3>
+                    <button type="button" onclick="toggleModal('porto6')" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <img class="p-3 block object-cover object-center w-full h-full rounded-lg" src="assets/image/landing/oraganzation.JPG" alt="organizational_landing_page">
+                    <a target="_blank" href="portofolio/clothing/src/index.html" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        klick to see the landing page
                     </a>
                 </div>
             </div>
@@ -595,6 +620,12 @@
         document.getElementById(porto5 + "-backdrop").classList.toggle("hidden");
         document.getElementById(porto5).classList.toggle("flex");
         document.getElementById(porto5 + "-backdrop").classList.toggle("flex");
+    }
+    function toggleModal(porto5){
+        document.getElementById(porto6).classList.toggle("hidden");
+        document.getElementById(porto6 + "-backdrop").classList.toggle("hidden");
+        document.getElementById(porto6).classList.toggle("flex");
+        document.getElementById(porto6 + "-backdrop").classList.toggle("flex");
     }
 </script>
 <script type="text/javascript">
